@@ -3,3 +3,14 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+.cuadro{
+	border:2px solid white;
+}
+
+.tew{
+	color:white;
+	font-family: algerian;
+	font-size: 30px;
+	text-align: center;
+}
