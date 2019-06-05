@@ -5,13 +5,28 @@
 	<title>Pokémon</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="icon" href="imagenes/logo.png">
 </head>
 <body ng-controller="pokedex">
-	<div class="cuadro" ng-repeat="poke in pokedexb"><p class="tew">{{poke.data.name}}</p></div>
-
-
+	<div class="container-fluid">
+		<br>
+		<div class="row">
+			<div class="col-md-12"><center><h1 class="titu">Pokédex</h1></center></div>
+		</div>
+		<!--POkemon-->
+		<div class="row">
+			<div class="col-md-3" ng-repeat="poke in pokedexb">
+				<div class="cuadro" >
+				<img class="ims" src="{{poke.data.sprites.front_default}}">
+				<p class="tew">{{poke.data.name}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+	<script src="js/bootstrap.css"></script>
 	<script src="script.js"></script>
 </body>
 </html>
