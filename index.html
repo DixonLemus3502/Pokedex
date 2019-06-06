@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html ng-app="pokemon">
+<html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<title>Pokémon</title>
+	<title>Login</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="icon" href="imagenes/logo.png">
 </head>
-<body ng-controller="pokedex">
-	<div class="container-fluid fonu">
-		<br>
-		<div class="row">
-			<div class="col-md-12"><center><img src="imagenes/pokedexu.png"></center></div>
-		</div>
-		<br>
-		<!--POkemon-->
-		<div class="row">
-			<div class="col-md-3" ng-repeat="poke in pokedexb">
-				<div class="cuadro" >
-				<img class="ims" src="{{poke.data.sprites.front_default}}">
-				<p class="tew">{{poke.data.name}}</p>
+	<body class="foni">
+		<div class="container-fluid">
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-12"><center><img src="imagenes/los.png"></center></div>
+			</div>
+			<br>
+			<!--formulario-->
+			<div class="row">
+				<div class="col-md-12"><center><img src="imagenes/lod.gif" height="100px" width="140px"></center></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<center><form class="pokeform" method="get">
+						Nombre de Usuario: <input class="pokinput" type="text" placeholder="Ingrese Nombre"><br>
+						<br>
+						Contraseña: <input class="pokinput" type="password" placeholder="Ingrese Contraseña"><br>
+						<br>
+						<button class="pokebuto"><a href="inicio.html">ENTRAR</a></button>		
+					</form></center>
 				</div>
+				<div class="col-md-2"></div>
 			</div>
 		</div>
-	</div>
-	<!--Scripts-->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-	<script src="js/bootstrap.css"></script>
-	<script src="script.js"></script>
-</body>
+		<!--js-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+		<script src="js/bootstrap.css"></script>
+		<script src="script.js"></script>
+	</body>
 </html>
