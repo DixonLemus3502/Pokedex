@@ -12,14 +12,14 @@
 	<div class="container-fluid fonu">
 		<br>
 		<div class="row">
-			<div class="col-md-12"><center><img src="imagenes/pokedexu.png"></center></div>
+			<div class="col-md-12"><center><img class="img-responsive" src="imagenes/pokedexu.png"></center></div>
 		</div>
 		<br>
 		<!--POkemon-->
 		<div class="row">
 			<div class="col-md-3" ng-repeat="poke in pokedexb">
 				<div class="cuadro" >
-				<img class="ims" src="{{poke.data.sprites.front_default}}">
+				<img class="ims img-responsive" src="{{poke.data.sprites.front_default}}">
 				<p class="tew">{{poke.data.name}}</p>
 				</div>
 			</div>

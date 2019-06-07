@@ -9,6 +9,14 @@
 	margin: 2px
 }
 
+.texb{
+	color:black;
+	font-size: 60px;
+	font-family: impact;
+	bottom: 100px;
+	position: relative;
+}
+
 .titu{
 	color:white;
 	font-size:70px;
@@ -40,9 +48,9 @@
 .pokeform{
 	background-color: rgba(0, 40, 32, 0.6);
 	color:white;
-	padding: 40px 11px;
+	padding: 80px;
   	margin: 8px 0;
-  	border-radius: 4px;
+  	border-radius: 8px;
 }
 
 .pokinput{
@@ -53,13 +61,19 @@
 .pokebuto{
 	background-color: white;
   	color: black;
-  	border: 3px solid YELLOW;
+  	border: 3px solid red;
 	padding: 15px 32px;
 	border-radius: 8px;
 	transition-duration: 0.4s;
 }
 
 .pokebuto:hover{
-	background-color: YELLOW;
+	background-color: red;
     color: white;
+}
+
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+	display:block;
 }
